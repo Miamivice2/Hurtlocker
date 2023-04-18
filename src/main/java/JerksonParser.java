@@ -53,26 +53,21 @@ public class JerksonParser {
         return x;
     }
 
-
     public static Grocery createObjectFromString(String s) {
         Grocery item = new Grocery();
-        //String patternString = "[n,N][a,A][m,M][e,E]";
         String patternString = "name";
         String name = getObject(patternString,s);
         if(stringLength(name) == 0) {
             item.setName("mistake");
         } else item.setName(name);
-        //String patternString1 = "[p,P][r,R][i,I][c,C][e,E]";
         String patternString1 = "price";
         String price = getObject(patternString1,s);
         if(stringLength(price) == 0) {
             item.setPrice("mistake");
         } else item.setPrice(price);
-        //String patternString2 = "[t,T][y,Y][p,P][e,E]";
         String patternString2 = "type";
         String type = getObject(patternString2,s);
         item.setType(type);
-        //String patternString3 = "[e,E][x,X][p,P][i,I][r,R][a,A][T,t][i,I][o,O][n,N]";
         String patternString3 = "expiration";
         String expiration = getObject(patternString3,s);
         item.setExpiration(expiration);

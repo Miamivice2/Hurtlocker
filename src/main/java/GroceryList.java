@@ -49,11 +49,6 @@ public class GroceryList {
                 apples.add(g);
             }
         }
-        //System.out.println(cookies);
-        // System.out.println(milk);
-        //System.out.println(bread);
-        //System.out.println(apples);
-        // System.out.println(errorCount);
 
     }
 

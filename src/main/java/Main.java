@@ -13,7 +13,6 @@ public class Main {
         return result;
     }
 
-
     public static void main(String[] args) throws Exception{
         String output = (new Main()).readRawDataToString();
         GroceryList groceryList = new GroceryList();
@@ -25,7 +24,6 @@ public class Main {
         System.out.println(groceryList);
         groceryList.sortbyName();
         groceryList.getGroceryList();
-
 
     }
 }
